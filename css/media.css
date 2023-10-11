@@ -1,0 +1,164 @@
+@media only screen and (max-width: 600px) {
+    /* -------------- navbar start ------------------*/
+    .navbar{
+        display: flex !important;
+    }
+    .header{
+        display: none !important;
+    }
+    .header-item-1{
+        margin: 0;
+    }
+    /* -------------- navbar end ------------------*/
+
+    .banner-sec {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .banner-sec-image-1 {
+        width: 100% !important;
+        height: 250px;
+    }
+    .banner-sec-one-right {
+        width: 100% !important;
+        align-items: center;
+    }
+    .banner-sec-one-right p.story-desc {
+        width: 100%;
+    }
+
+    .carousel-sec .inner-carousel-sec .owlcarousel-item {
+        width: 400px;
+        height: 200px;
+    }
+    .carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-img {
+        width: 150px;
+        height: 200px;
+        background-position: center;
+    }
+    .carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .carousel-desc-chips {
+        font-size: 8px;
+    }
+    .carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc i {
+        font-size: 10px;
+    }
+    .carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc h6 {
+        font-size: 12px;
+    }
+    .carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc p {
+        font-size: 9px;
+        margin-bottom: 4px;
+    }
+    .carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .user-info {
+        gap: 0px;
+    }
+
+    .carousel-sec-desc {
+        padding-left: 0;
+    }
+    .carousel-sec-desc ul{
+        flex-direction: column;
+    }
+    .carousel-sec-desc ul li{
+        width: 100%;
+    }
+    .carousel-sec-desc .carousel-sec-desc-item{
+        text-align: center;
+    }
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-1,
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-2,
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-3,
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-4,
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-5{
+        margin: auto;
+    }
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-5{
+        display: none;
+    }
+
+    .feature-img{
+        margin: auto;
+    }
+    .feature-desc{
+        text-align: center;
+    }
+
+    .links{
+        gap: 20px;
+    }
+    .links div{
+        display: flex;
+        justify-content: center;
+    }
+    .social-icons{
+        text-align: center !important;
+    }
+    .t-and-c div{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    /* -------------- navbar start ------------------*/
+    .navbar{
+        display: flex !important;
+    }
+    .header{
+        display: none !important;
+    }
+    .header-item-1{
+        margin: 0;
+    }
+    /* -------------- navbar end ------------------*/
+
+    .feature-img{
+        margin: auto;
+    }
+    .feature-desc {
+        text-align: center;
+    }
+
+    .carousel-sec-desc {
+        padding-left: 0;
+    }
+    .carousel-sec-desc ul{
+        flex-direction: column;
+    }
+    .carousel-sec-desc ul li{
+        width: 100%;
+    }
+    .carousel-sec-desc .carousel-sec-desc-item{
+        text-align: center;
+    }
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-1,
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-2,
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-3,
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-4,
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-5{
+        margin: auto;
+    }
+    .carousel-sec-desc .carousel-sec-desc-item .design-img-5{
+        display: none;
+    }
+
+    .links{
+        gap: 20px;
+    }
+    .links div{
+        display: flex;
+        justify-content: center;
+    }
+    .social-icons{
+        text-align: center !important;
+    }
+    .t-and-c div{
+        display: flex;
+        justify-content: center;
+    }
+}

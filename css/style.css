@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Righteous&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --primary-font-color: #16C0EF;
+    --primary-bg-color: #1CC0EF;
+    --secondary-bg-color: #F4F8FA;
+    --secondary-font-color: #7C8796;
+    --white: #FFFFFF;
+}
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+/* -------------- navbar start ------------------*/
+.navbar{
+    display: none !important;
+}
+/* -------------- navbar end ------------------*/
+
+/* -------------- header section start ------------------*/
+.header-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 16px;
+    text-decoration: none;
+    letter-spacing: 0.15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.header-item-1{
+    color: var(--white);
+    background-color: var(--primary-bg-color);
+    margin-right: 40px;
+    transition: .4s;
+}
+.header-item-1:hover{
+    color: var(--primary-bg-color);
+    background-color: var(--white);
+    border: 1px solid var(--primary-font-color);
+}
+.header-item-2{
+    color: var(--primary-font-color);
+    background-color: var(--white);
+    border: 1px solid var(--primary-font-color);
+    transition: .4s;
+}
+.header-item-2:hover{
+    color: var(--white);
+    background-color: var(--primary-font-color);
+}
+.header-item-3{
+    color: var(--secondary-font-color);
+    background-color: var(--white);
+    transition: .4s;
+}
+
+.header-item-4{
+    color: var(--primary-font-color);
+    background-color: var(--white);
+    transition: .4s;
+}
+.header-item-3:hover,
+.header-item-4:hover{
+    color: var(--primary-bg-color);
+    background-color: var(--white);
+    border: 1px solid var(--primary-font-color);
+}
+.header-item-5{
+    color: var(--secondary-font-color);
+    padding: 6px 16px;
+    cursor: pointer;
+}
+/* -------------- header section end ------------------*/
+
+/* -------------- section 1 start ------------------*/
+.banner-sec{
+    padding: 20px 0 120px 0;
+}
+.banner-sec-image-1{
+    width: 45% !important;
+    height: 320px;
+    background-image: url(../images/banner-image-1.png);
+    background-size: cover;
+    transition: .4s;
+}
+.banner-sec-image-1:hover{
+    transform: translateY(-10px);
+}
+.banner-sec-one-right{
+    width: 55% !important;
+    padding-left: 30px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-sec-one-right h3{
+    font-weight: bold;
+    letter-spacing: 0.39px;
+}
+.banner-sec-one-right p span:first-child{
+    color: #1CBFEF;
+}
+.banner-sec-one-right p.story-desc{
+    font-size: 12px;
+    width: 60%;
+}
+.banner-sec-one-right span.create-btn{
+    width: fit-content;
+    color: var(--white);
+    background-color: var(--primary-bg-color);
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s;
+}
+.banner-sec-one-right span.create-btn:hover{
+    color: var(--primary-font-color);
+    background-color: var(--white);
+    border: 1px solid var(--primary-font-color);
+    font-weight: bold;
+}
+/* -------------- section 1 end ------------------*/
+
+/* -------------- carousel section start ------------------*/
+.carousel-sec{
+    position: relative;
+    background-color: var(--secondary-bg-color);
+    padding-bottom: 30px;
+}
+.carousel-sec .inner-carousel-sec{
+    position: relative;
+    top: -40px;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item{
+    width: 600px;
+    height: 260px;
+    display: flex;
+    cursor: pointer;
+    transition: .4s;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item:hover{
+    transform: translateY(-10px);
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-img{
+    width: 250px;
+    height: 260px;
+    background-image: url(../images/carousel-item-1.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-img.carousel-img-1{
+    background-image: url(../images/carousel-item-2.png);
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-img .play-icon{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/play-icon.png);
+    background-size: cover;
+    transition: .4s;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-img:hover .play-icon{
+    transform: scale(1.5);
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc{
+    width: 350px;
+    height: 260px;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border: 2px solid var(--secondary-bg-color);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .carousel-desc-chips{
+    color: var(--secondary-font-color);
+    background-color: #EEF3F8;
+    font-size: 10px;
+    padding: 4px 6px;
+    border-radius: 10px;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc i{
+    color: var(--secondary-font-color);
+    float: right;
+    cursor: pointer;
+    transition: .4s;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc i:hover{
+    -webkit-text-stroke-color: crimson;
+    -webkit-text-stroke-width: 2px;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc i.active{
+    animation-name: likeButton;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    -webkit-text-stroke-color: crimson;
+    -webkit-text-stroke-width: 2px;
+}
+@keyframes likeButton{
+    50%{transform: scale(.6);}
+    100%{transform: scale(1);}
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc h6{
+    font-weight: bold;
+    letter-spacing: 0.40px;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc p{
+    color: #5D677E;
+    font-size: 10px;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .user-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 6px;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .user-info .user-img{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/user-img-1.png);
+    background-size: cover;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .user-info .user-desc{
+    font-size: 10px;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .user-info .user-desc div:first-child{
+    color: #000000;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .user-info .user-desc div:nth-child(2){
+    color: #5D677E;
+}
+.carousel-sec .inner-carousel-sec .owlcarousel-item .carousel-desc .user-info span{
+    color: var(--primary-font-color);
+    font-size: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.carousel-sec-desc{
+    padding-left: 200px;
+}
+.carousel-sec-desc ul{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding-left: 0;
+}
+.carousel-sec-desc ul li{
+    list-style: none;
+    width: 20%;
+}
+.carousel-sec-desc .carousel-sec-desc-item{
+    width: 100%;
+}
+.carousel-sec-desc .carousel-sec-desc-item .design-img-1{
+    width: 176px;
+    height: 73px;
+    background-image: url(../images/design-image-1.png);
+    background-size: cover;
+}
+.carousel-sec-desc .carousel-sec-desc-item .design-img-2{
+    width: 49px;
+    height: 49px;
+    background-image: url(../images/design-image-2.png);
+    background-size: cover;
+}
+.carousel-sec-desc .carousel-sec-desc-item .design-img-3{
+    width: 49px;
+    height: 49px;
+    background-image: url(../images/design-image-3.png);
+    background-size: cover;
+}
+.carousel-sec-desc .carousel-sec-desc-item .design-img-4{
+    width: 49px;
+    height: 49px;
+    background-image: url(../images/design-image-4.png);
+    background-size: cover;
+}
+.carousel-sec-desc .carousel-sec-desc-item .design-img-5{
+    width: 100px;
+    height: 150px;
+    background-image: url(../images/design-image-5.png);
+    background-size: cover;
+}
+.carousel-sec-desc .carousel-sec-desc-item.carousel-sec-desc-1 h4{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.carousel-sec-desc .carousel-sec-desc-item.carousel-sec-desc-1 span{
+    color: var(--white);
+    background-color: var(--primary-bg-color);
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s;
+}
+.carousel-sec-desc .carousel-sec-desc-item.carousel-sec-desc-1 span:hover{
+    color: var(--primary-font-color);
+    background-color: var(--white);
+    border: 1px solid var(--primary-font-color);
+}
+.carousel-sec-desc .carousel-sec-desc-item.carousel-sec-desc-2 h6{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.carousel-sec-desc .carousel-sec-desc-item.carousel-sec-desc-2 span{
+    color: var(--secondary-font-color);
+    font-size: 12px;
+}
+/* -------------- carousel section end ------------------*/
+
+/* -------------- feature section start ------------------*/
+.feature-img{
+    width: 300px !important;
+    height: 250px;
+    background-image: url(../images/feature-img.png);
+    background-size: cover;
+    transition: .4s;
+}
+.feature-img:hover{
+    transform: translateY(-10px);
+}
+.feature-desc h4, .feature-desc h6{
+    font-weight: bolder;
+}
+.feature-desc p{
+    font-size: 14px;
+}
+.feature-btn{
+    color: var(--primary-font-color);
+    background-color: var(--white);
+    border: 1px solid var(--primary-font-color);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 16px;
+    text-decoration: none;
+    letter-spacing: 0.15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .4s;
+}
+.feature-btn:hover{
+    color: var(--white);
+    background-color: var(--primary-font-color);
+}
+/* -------------- feature section end ------------------*/
+
+/* -------------- footer start ------------------*/
+.footer ul, .footer p{
+    padding-left: 0;
+    list-style: none;
+    color: var(--secondary-font-color);
+    font-size: 12px;
+}
+.footer p i{
+    color: var(--secondary-font-color);
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.footer p i:hover{
+    color: var(--primary-font-color);
+}
+.footer ul li:first-child{
+    font-weight: bold;
+}
+
+.footer .subscribe-input, .footer .subscribe-btn{
+    background-color: var(--white);
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    float: right;
+}
+.footer .subscribe-input{
+    width: 200px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.footer .subscribe-input:focus{
+    outline: none;
+}
+.footer .subscribe-btn{
+    color: var(--primary-font-color);
+    font-weight: bold;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/* -------------- footer end ------------------*/
+
+/* -------------- owl carousel start ------------------*/
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: var(--primary-font-color) !important;
+}
+.owl-prev span, .owl-next span{
+    padding: 0 6px;
+    background-color: var(--white);
+    font-size: 20px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: transparent !important;
+    color: #869791 !important;
+}
+/* -------------- owl carousel end ------------------*/
